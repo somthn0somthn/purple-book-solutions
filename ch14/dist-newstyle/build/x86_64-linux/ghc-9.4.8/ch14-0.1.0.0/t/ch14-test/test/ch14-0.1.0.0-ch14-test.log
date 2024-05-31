@@ -1,0 +1,14 @@
+Test suite ch14-test: RUNNING...
+
+Addition
+  15 divided by 3 is 5 [✔]
+  22 divided by 5 is 4 rem 2 [✔]
+  3 recursive mult 3 is 9 [✔]
+  4 recursive mult 10 is 40 [✔]
+  x + 1 is always greater than x [✔]
+    +++ OK, passed 100 tests.
+
+Finished in 0.0013 seconds
+5 examples, 0 failures
+Test suite ch14-test: PASS
+Test suite logged to: /home/z/Desktop/Study/Haskell texts/purple-book-solutions/ch14/dist-newstyle/build/x86_64-linux/ghc-9.4.8/ch14-0.1.0.0/t/ch14-test/test/ch14-0.1.0.0-ch14-test.log

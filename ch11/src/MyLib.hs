@@ -285,6 +285,7 @@ foldTree f b tree = foldr f b $ postorder tree
 
 --Ciphers
 
+vigenere :: [Char] -> [Char] -> String
 vigenere str key = matchSpacing str $ foldr (\(x, y) acc -> shift x y : acc) [] zipped
   where 
 
@@ -308,6 +309,14 @@ vigenere str key = matchSpacing str $ foldr (\(x, y) acc -> shift x y : acc) [] 
       | x > 90 = (x - 90) + 64
       | otherwise = x
     
+    matchSpacing :: String -> String -> String
+    matchSpacing [] _ = []
+    matchSpacing _ [] = []
+    matchSpacing (r:rs) junk@(j:js)
+      | isSpace r = ' ' : matchSpacing rs junk
+      | otherwise = j : matchSpacing rs js
+
+    
 
 --As-patterns
 
@@ -325,6 +334,7 @@ capitalizeWords str = map (\word@(x:xs) -> (word, (toUpper x):xs)) theWords
 --Language exercises
 
 capitalizeWord :: String -> String
+capitalizeWord "" = ""
 capitalizeWord word@(x:xs) = (toUpper x) : xs
 
 capitalizeParagraph :: String -> String

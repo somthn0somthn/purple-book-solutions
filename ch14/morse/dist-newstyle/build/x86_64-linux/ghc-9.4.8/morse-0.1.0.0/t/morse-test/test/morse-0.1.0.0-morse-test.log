@@ -1,0 +1,6 @@
+Test suite morse-test: RUNNING...
+RUNNING TESTS...
+*** Failed! Falsified (after 1 test):
+'z'
+Test suite morse-test: PASS
+Test suite logged to: /home/z/Desktop/Study/Haskell texts/purple-book-solutions/ch14/morse/dist-newstyle/build/x86_64-linux/ghc-9.4.8/morse-0.1.0.0/t/morse-test/test/morse-0.1.0.0-morse-test.log
