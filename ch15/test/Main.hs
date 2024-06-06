@@ -2,9 +2,6 @@ module Main (main) where
 
 import MyLib
 import Test.QuickCheck
-import Test.QuickCheck (quickCheck, Arbitrary (arbitrary))
-import MyLib (monoidLeftIdentity, monoidRightIdentity, BoolDisj (BoolDisj), monoidCombineLeftIdentity, monoidCombineRightIdentity, memAssoc)
-import Text.Read (Lexeme(String))
 
 
 
