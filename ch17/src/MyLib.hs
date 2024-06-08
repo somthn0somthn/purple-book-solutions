@@ -7,8 +7,6 @@ import Data.List (elemIndex)
 import Test.QuickCheck
 import Test.QuickCheck.Checkers
 import Test.QuickCheck.Classes
-import System.Posix.Internals (lstat)
-import Test.QuickCheck (Arbitrary (arbitrary))
 import Data.Monoid (Monoid(mempty, mappend))
 import Data.Semigroup (Semigroup)
 import Control.Applicative (liftA3)
