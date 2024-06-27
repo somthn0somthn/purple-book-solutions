@@ -142,4 +142,3 @@ instance (Monad m)
         (>>=) :: Monad m => IdentityT m a -> (a -> IdentityT m b) -> IdentityT m b
         (>>=) (IdentityT fa) f = IdentityT $ fa >>= runIdentityT . f
 
---CONT FROM the bind breakdown
