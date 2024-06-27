@@ -316,4 +316,3 @@ parsePhoneNumber = do
 --It seems that Trifecta, which the chapter focused on,
 --may not be the best parsing library. And that addressing these
 --problems with megaparsec could make more sense
-
